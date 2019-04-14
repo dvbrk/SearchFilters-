@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>List.js with Multiple Filters, Search, and Pagination</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  
+				<div class="container">
+					<div class="row">
+						<div id="users" class="col-xs-12">
+							<div class="filter-group row">
+								<div class="form-group col-xs-12 col-sm-12 col-md-4">
+									<input type="text" class="search form-control" placeholder="Search" />
+								</div>
+								<div class="form-group col-xs-12 col-sm-12 col-md-4">
+									<div class="radio-inline">
+										<label>
+											<input class="filter-all" type="radio" value="all" name="gender" id="gender-all" checked /> All
+										</label>
+									</div>
+									<div class="radio-inline">
+										<label>
+											<input class="filter" type="radio" value="female" name="gender" id="gender-female" /> Female
+										</label>
+									</div>
+									<div class="radio-inline">
+										<label>
+											<input class="filter" type="radio" value="male" name="gender" id="gender-male" /> Male
+										</label>
+									</div>
+								</div>
+								<div class="form-group col-xs-12 col-sm-12 col-md-4">
+									<div class="radio-inline">
+										<label>
+											<input class="filter" type="radio" value="Employed" name="Profession" id="Profession-all" /> Employed 
+										</label>
+									</div>
+									<div class="radio-inline">
+										<label>
+											<input class="filter" type="radio" value="Unemployed" name="Profession" id="Profession-Unemployed" /> Unemployed
+										</label>
+									</div>
+									
+								</div>
+								<div class="form-group col-xs-12 col-sm-12">
+									<button class="btn btn-danger" onclick="resetList();">Clear</button>
+								</div>
+							</div>
+							<ul class="list">
+								<li class="list--list-item" data-gender="male">
+									<h3 class="name">Johnny b Good </h3>
+									<p class="born">1986</p>
+									<p class="Profession">Unemployed </p>
+								</li>
+								<li class="list--list-item" data-gender="male">
+									<h3 class="name">Jonas Ackerland</h3>
+									<p class="born">1985</p>
+									<p class="Profession"> Employed Drummer</p>
+								</li>
+								<li class="list--list-item" data-gender="male">
+									<h3 class="name">Jack the Ripper</h3>
+									<p class="born">1985</p>
+									<p class="Profession">Unemployed Serial Killer </p>
+								</li>    
+								<li class="list--list-item" data-gender="male">
+									<h3 class="name">Marnie </h3>
+									<p class="born">1985</p>
+									<p class="Profession"> Employed Professional Dog </p>
+								</li>
+								<li class="list--list-item" data-gender="female">
+									<h3 class="name">Martina</h3>
+									<p class="born">1986</p>
+									<p class="Profession">Employed Bartender</p>
+								</li>
+								<li class="list--list-item" data-gender="male">
+									<h3 class="name">Gustav</h3>
+									<p class="born">1983</p>
+									<p class="Profession">Unemployed Russian Gangster</p>
+								</li>
+							</ul>
+							<li class="list--list-item" data-gender="female">
+								<h3 class="name">Christina </h3>
+								<p class="born">1990</p>
+								<p class="Profession">Employed Waitress </p>
+							</li>
+						</ul>
+
+			<div class="no-result">No Results</div>
+			<ul class="pagination"></ul>
+		</div>
+	</div>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/list.pagination.js/0.1.1/list.pagination.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
